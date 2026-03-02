@@ -1,24 +1,18 @@
-# O foco seria na criação base do esqueleto do tradutor explicando de maneira simples como funciona a criação do tradutor, sendo a estrutural inicial do projeto em questão
+# Engine de Tradução e Mapeamento de Termos Técnicos
+# Desenvolvido por Vitor - Estudante de ADS (Foco em Compliance)
 
-meu_dicionario = {
-    "agreement"== "contrato/acordo judicial",
-    "county"== "comarca (termo regional)",
-    "lawyer"== "advogado",
-    "court"== "tribunal",
-    "property"== "imóvel/propriedade"
+# O dicionário é a base de conhecimento do sistema
+termos_tecnicos = {
+    "compliance": "conformidade",
+    "risk_assessment": "análise de risco",
+    "data_privacy": "privacidade de dados"
 }
-print("="*30)
-print(" SISTEMA DE TRADUÇÃO JURÍDICA ")
-print("="*30)
 
-# 2. Entrada de dados (Igual ao 'leia' do VisualG)
-termo = input("Digite o termo em inglês para traduzir: ").lower().strip()
+def traduzir_termo(termo):
+    # Uso do .get() para evitar que o sistema quebre (Maturidade Técnica)
+    resultado = termos_tecnicos.get(termo.lower(), "Termo não encontrado na base de dados.")
+    return resultado
 
-# 3. Lógica de busca (A 'mágica' que você vai automatizar)
-if termo in meu_dicionario:
-    resultado = meu_dicionario[termo]
-    print(f"\n✅ TRADUÇÃO TÉCNICA: {resultado}")
-else:
-    print("\n❌ Termo não encontrado no dicionário regional.")
-
-print("="*30)
+# Simulação de consulta
+termo_busca = "compliance"
+print(f"Resultado da análise: {traduzir_termo(termo_busca)}")
