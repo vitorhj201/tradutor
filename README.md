@@ -1,4 +1,4 @@
-# O foco seria na criação base do esqueleto do tradutor explicando de maneira simples como funciona a criação do tradutor
+# O foco seria na criação base do esqueleto do tradutor explicando de maneira simples como funciona a criação do tradutor, sendo a estrutural inicial do projeto em questão
 
 meu_dicionario = {
     "agreement"== "contrato/acordo judicial",
