@@ -13,5 +13,5 @@ Em processos de auditoria e precificação internacional (como nos cenários Bra
 - **Programação Defensiva:** Implementação de métodos `.get()` e tratamento de exceções para evitar que o software pare (crash) caso encontre um termo desconhecido.
 
 ---
-> **Próximo Passo no Fluxo:** Os dados normalizados por este módulo alimentam o [Guardian Compliance Logic](COLOCAR-LINK-DO-OUTRO-REPO-AQUI).
+> **Próximo Passo no Fluxo:** Os dados normalizados por este módulo alimentam o https://github.com/vitorhj201/Guardina-compliace-logic/blob/main/README.md.
 > 
