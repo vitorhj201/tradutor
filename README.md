@@ -1,17 +1,17 @@
-# 🛡️ Data Mapping Engine - Guardian Project
+# 🛡️ Guardian Module: Data Translator & Normalizer
 
-Este repositório contém o motor de processamento e tradução de dados do **Guardian Project**. 
+Este módulo é o componente de **Ingestão e Normalização de Dados** do ecossistema Guardian. A sua função é garantir que termos técnicos de diferentes idiomas e contextos sejam convertidos num padrão único para análise.
 
-### 🚀 Objetivo
-Como estudante de ADS, desenvolvi este módulo para realizar a normalização e tradução de termos técnicos fundamentais para auditorias de conformidade internacional (Compliance). Este é o primeiro passo para a análise de riscos automatizada.
+### 🚀 Valor de Negócio
+Em processos de auditoria e precificação internacional (como nos cenários Brasil-Polónia), a tradução manual de termos técnicos é lenta e sujeita a erros. Este módulo:
+- **Economiza Tempo:** Automatiza a conversão de termos em milissegundos.
+- **Evita Prejuízos:** Garante que a lógica de risco não falhe por causa de dados mal formatados.
 
-### 🛠️ Funcionalidades Técnicas
-- **Mapeamento via Dicionários:** Uso estratégico de estruturas de dados (Hash Maps/Dicionários) para busca rápida de termos.
-- **Programação Defensiva:** Implementação de métodos de busca que evitam erros de execução (Crash) caso o termo não seja encontrado.
-- **Foco em Compliance:** Base de dados inicial focada em termos de auditoria Brasil-Polônia-Paraguai.
-
-### 💻 Como o código funciona
-O sistema recebe um "input" (termo técnico) e retorna o mapeamento correspondente na base de dados de risco, garantindo integridade na comunicação entre APIs e usuários.
+### 🛠️ Especificações Técnicas
+- **Linguagem:** Python 3.x
+- **Estruturas de Dados:** Utilização de Dicionários (Hash Maps) para mapeamento de alta performance.
+- **Programação Defensiva:** Implementação de métodos `.get()` e tratamento de exceções para evitar que o software pare (crash) caso encontre um termo desconhecido.
 
 ---
-*Este projeto faz parte do meu desenvolvimento contínuo em Análise e Desenvolvimento de Sistemas na UniCesumar.*
+> **Próximo Passo no Fluxo:** Os dados normalizados por este módulo alimentam o [Guardian Compliance Logic](COLOCAR-LINK-DO-OUTRO-REPO-AQUI).
+> 
